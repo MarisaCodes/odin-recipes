@@ -156,7 +156,10 @@ div.recipe-link:hover > i.fa-link {
 img.food-img {
   width: 100%;
 }
-img.food-hover:hover,
+img.food-hover {
+  box-shadow: 0 0 20px #eee;
+}
+img.food-img:hover,
 .active {
   box-shadow: 0 0 20px rgb(189, 80, 12);
   height: 105%;
