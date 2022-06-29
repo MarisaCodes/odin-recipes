@@ -96,7 +96,6 @@ div#recipe-card-container > div.each-recipe {
 }
 
 div#recipe-card-container div.recipe-img {
-  /* background-color: red; */
   width: 100%;
   height: 45vh;
   border-radius: 3px;
