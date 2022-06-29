@@ -1,0 +1,370 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  background-color: black;
+  box-shadow: 0 0 15px gold;
+}
+/* banner and title styles */
+div#banner {
+  background: url(background-img.jpg);
+  box-shadow: inset 0 0 0 9000em rgba(68, 68, 68, 0.5);
+  background-size: cover;
+  height: 50vh; /* change later for media queries */
+}
+
+/* title style */
+
+h1#large-screen-title {
+  color: goldenrod;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 4em;
+}
+
+div#top-bar {
+  background-color: rgb(255, 250, 234);
+  height: min-content;
+}
+.fix {
+  position: fixed;
+  height: 15%;
+  right: 0;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 20px goldenrod;
+}
+img#odin-logo {
+  height: 5em;
+}
+i.fa-thumbtack {
+  float: right;
+  padding: 1em;
+}
+i.fa-thumbtack:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 700px) {
+  div#banner {
+    height: 80vh;
+  }
+  h1#title-index {
+    height: 60vh;
+    color: transparent;
+    border: 0px solid white;
+  }
+  div#top-bar {
+    text-align: center;
+  }
+}
+
+/* recipe card styles */
+
+div#recipe-card-container {
+  padding-top: 5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+/*each recipe card */
+div#recipe-card-container > div.each-recipe {
+  display: grid;
+  gap: 2em;
+  margin-bottom: 5em;
+  justify-content: center;
+}
+
+div#recipe-card-container div.recipe-img {
+  width: 100%;
+  height: 45vh;
+  border-radius: 3px;
+  transition: 450ms;
+}
+
+/*recipe link within each card */
+div.recipe-link {
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 1em;
+  padding: 0.5em;
+  transition: 450ms;
+  border-radius: 0.3em;
+  width: 100%;
+  margin: 0 auto;
+}
+div.recipe-link:hover {
+  background-color: #eece1a;
+  transition: 450ms;
+}
+
+/* when clicked add this style */
+.click {
+  background-color: #eece1a;
+  text-align: center;
+  padding-top: 1em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  transition: 450ms;
+  width: 100%;
+  margin: 0 auto;
+}
+/**/
+
+i.fa-link {
+  float: left;
+}
+div.recipe-link:hover > i.fa-link {
+  color: rgb(0, 0, 255, 0.5);
+}
+/*when clicked, target i.fa-link color */
+.white-link {
+  color: white;
+}
+.blue-link {
+  color: rgb(0, 0, 255, 0.5);
+}
+
+/* food image style on card */
+.food-img {
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid rgba(189, 80, 12, 0.637);
+  transition: 450ms;
+  cursor: pointer;
+}
+img.food-img {
+  width: 100%;
+}
+img.food-hover {
+  box-shadow: 0 0 20px #eee;
+}
+img.food-img:hover,
+.active {
+  box-shadow: 0 0 20px rgb(189, 80, 12);
+  height: 105%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(189, 80, 12, 0.637);
+  transition: 450ms;
+  cursor: pointer;
+}
+
+/*grey bar with copyright*/
+div.copy {
+  background-color: rgba(0, 0, 0, 0.54);
+  margin-top: 30vh;
+  padding: 2em;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1020px) {
+  div#recipe-card-container {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+    box-shadow: inset 0 700px rgb(85, 63, 63);
+  }
+}
+@media only screen and (max-width: 720px) {
+  div#recipe-card-container div.recipe-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+  .food-img,
+  img.food-img:hover {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid rgba(189, 80, 12, 0.637);
+    cursor: pointer;
+    object-fit: cover;
+  }
+  img.food-hover:hover,
+  .active {
+    box-shadow: 0 0 20px rgb(189, 80, 12);
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(189, 80, 12, 0.637);
+    cursor: pointer;
+  }
+}
+
+/* pizza recipe html*/
+body#pizza-body {
+  box-sizing: border-box;
+  margin: 0;
+}
+#recipe-page-template {
+  font-family: Tahoma;
+  color: #444;
+  letter-spacing: 1px;
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 0 0 20px;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+h1#recipe-name {
+  background-color: #eee;
+  border-radius: 3px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+img#the-food-img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(189, 80, 12);
+}
+h2#describe {
+  border-radius: 3px;
+  margin: 50px;
+  padding: 20px;
+}
+#recipe-page-template > hr {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(189, 80, 12);
+  box-shadow: 0 0 0;
+  margin-bottom: 50px;
+}
+p {
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  line-height: 25px;
+  font-size: 0.9em;
+  background-color: #eee;
+  border-radius: 1em;
+}
+h3#sub-titles {
+  margin: 20px;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+ul {
+  margin: 10px;
+}
+li {
+  border-left: 3px solid #444;
+  background-color: #eee;
+  list-style-type: none;
+  padding: 10px 30px;
+  font-size: medium;
+  margin: 40px;
+}
+i.fa-burger {
+  position: fixed;
+  right: 0;
+  margin: 30px;
+}
+i.fa-burger:hover,
+div.home:hover,
+.menu-item:hover {
+  color: #eece1a;
+}
+.active-menu {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 450ms;
+}
+.menu {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 450ms;
+}
+div.home {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 1em;
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  margin-top: 3em;
+}
+i.fa-house {
+  padding: 10px;
+}
+.menu-item {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 1em;
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.4em;
+  font-size: 2em;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  padding-right: 0.3em;
+}
+table {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 4px solid #eee;
+  border-radius: 3px;
+}
+td {
+  padding: 10px;
+  border: 2px solid #eee;
+  margin: 0;
+}
+.makeMe-bold {
+  font-weight: 600;
+  background-color: #eee;
+}
+#recipe-page-template > table > tbody {
+  font-family: "Trispace", sans-serif;
+}
