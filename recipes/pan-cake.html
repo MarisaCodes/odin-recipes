@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancake</title>
+  </head>
+  <body id="pizza-body">
+    <div class="menu">
+      <ul id="menu-page-list">
+        <a href="/index.html">
+          <div class="home"><i class="fa-solid fa-house"></i>Home</div>
+        </a>
+        <a href="/recipes/pizza.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pizza
+          </div>
+        </a>
+        <a href="/recipes/pavlova.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pavlova
+          </div>
+        </a>
+        <a href="/recipes/pan-cake.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pancake
+          </div>
+        </a>
+      </ul>
+    </div>
+    <i class="fa-solid fa-burger fa-2x"></i>
+    <div id="recipe-page-template">
+      <h1 id="recipe-name">Pavlova recipe</h1>
+      <br />
+      <img
+        src="images/cakey.jpg"
+        alt=""
+        id="the-food-img"
+        style="box-shadow: 0 0 6px goldenrod"
+      />
+      <br /><br /><br /><br />
+      <hr />
+      <h2 id="describe">Description:</h2>
+
+      <p>
+        A very light and fluffy pancake recipe that requires fresh buttermilk,
+        but it's the best I've ever made!
+      </p>
+      <br /><br />
+      <hr />
+      <h2 id="describe">Ingredients:</h2>
+      <br /><br />
+      <ul>
+        <li>3 cups all-purpose flour</li>
+        <li>3 tablespoons white sugar</li>
+        <li>3 teaspoons baking powder</li>
+        <li>1 ½ teaspoons baking soda</li>
+        <li>¾ teaspoon salt</li>
+        <li>3 cups buttermilk</li>
+        <li>½ cup milk</li>
+        <li>3 eggs</li>
+        <li>⅓ cup butter, melted</li>
+      </ul>
+      <br />
+      <hr />
+      <h2 id="describe">Steps</h2>
+      <ul>
+        <li>
+          Step 1
+          <p>
+            In a large bowl, combine flour, sugar, baking powder, baking soda,
+            and salt. In a separate bowl, beat together buttermilk, milk, eggs
+            and melted butter. Keep the two mixtures separate until you are
+            ready to cook.
+          </p>
+        </li>
+
+        <li>
+          Step 2
+          <p>
+            Heat a lightly oiled griddle or frying pan over medium high heat.
+            You can flick water across the surface and if it beads up and
+            sizzles, it's ready!
+          </p>
+        </li>
+        <li>
+          Step 3
+          <p>
+            Pour the wet mixture into the dry mixture; use a wooden spoon or
+            fork to mix until it's just blended together. The batter will be a
+            little lumpy which is what you want.
+          </p>
+        </li>
+        <li>
+          Step 4
+          <p>
+            Pour or scoop the batter onto the preheated griddle, using
+            approximately 1/2 cup for each pancake. Cook until bubbles appear on
+            the surface, 1 to 2 minutes; flip with a spatula and cook until
+            browned on the other side. Repeat with remaining batter.
+          </p>
+        </li>
+      </ul>
+      <br />
+      <br />
+      <hr />
+      <h2 id="describe" style="background-color: #eee">Nutrition Facts</h2>
+      <h3 id="sub-titles">Per serving:</h3>
+      <table>
+        <tr>
+          <td class="makeMe-bold">Calories</td>
+          <td>219cal</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">Protien</td>
+          <td>7.2g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">carbohydrates</td>
+          <td>30.7g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">Fat</td>
+          <td>7.4g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">cholesterol</td>
+          <td>63.3mg</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">sodium</td>
+          <td>515.5mg</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      const burger = document.querySelector(".fa-burger");
+      const menu = document.querySelector(".menu");
+
+      burger.addEventListener("click", function () {
+        if (menu.classList.contains("active-menu")) {
+          menu.classList.remove("active-menu");
+          menu.classList.add("menu");
+        } else {
+          menu.classList.remove("menu");
+          menu.classList.add("active-menu");
+        }
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/fb94170dc7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

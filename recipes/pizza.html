@@ -1,10 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Trispace&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pizza</title>
   </head>
-  <body></body>
+  <body id="pizza-body">
+    <div class="menu">
+      <ul id="menu-page-list">
+        <a href="/index.html">
+          <div class="home"><i class="fa-solid fa-house"></i>Home</div>
+        </a>
+        <a href="/recipes/pizza.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pizza
+          </div>
+        </a>
+        <a href="/recipes/pavlova.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pavlova
+          </div>
+        </a>
+        <a href="/recipes/pan-cake.html">
+          <div class="menu-item">
+            <span class="material-symbols-outlined"> menu_book </span>Pancake
+          </div>
+        </a>
+      </ul>
+    </div>
+    <i class="fa-solid fa-burger fa-2x"></i>
+    <div id="recipe-page-template">
+      <h1 id="recipe-name">Pizza recipe</h1>
+      <br />
+      <img src="images/pizza-recipe.jpg" alt="" id="the-food-img" />
+      <br /><br /><br /><br />
+      <hr />
+      <h2 id="describe">Description:</h2>
+
+      <p>
+        Quick, Easy and Delicious-Homemade pizza crust and tomato sauce has
+        never been easier-and this recipe for pepperoni pizza produces a
+        delicious classic!
+      </p>
+      <br /><br />
+      <hr />
+      <h2 id="describe">Ingredients:</h2>
+      <br /><br />
+      <h3 id="sub-titles">Contadina(R) Quick Pizza Sauce:</h3>
+      <ul>
+        <li>½ (12 ounce) can CONTADINA® Tomato Paste</li>
+        <li>1 teaspoon dried oregano, crushed</li>
+        <li>1 teaspoon dried basil, crushed</li>
+        <li>½ teaspoon garlic powder</li>
+        <li>½ teaspoon onion powder</li>
+        <li>½ teaspoon sugar</li>
+        <li>½ teaspoon salt</li>
+        <li>¼ teaspoon black pepper</li>
+      </ul>
+      <br />
+      <h3 id="sub-titles">Fleischmann's&reg; Easy Pizza Crust:</h3>
+      <ul>
+        <li>3 ¼ cups all-purpose flour, or more as needed</li>
+        <li>
+          2 (.25 ounce) envelopes FLEISCHMANN'S® Pizza Crust Yeast or RapidRise®
+          Yeast
+        </li>
+        <li>1 tablespoon sugar</li>
+        <li>1 ½ teaspoons salt</li>
+        <li>1 ⅓ cups very warm water (120 degrees F to 130 degrees F)</li>
+        <li>⅓ cup oil</li>
+      </ul>
+      <br />
+      <h3 id="sub-titles">Toppings:</h3>
+      <ul>
+        <li>1 (6 ounce) package HORMEL® Pepperoni</li>
+        <li>1 cup shredded mozzarella cheese, or more to taste</li>
+      </ul>
+      <br />
+      <br />
+      <hr />
+
+      <h2 id="describe">Steps</h2>
+      <ul>
+        <li>
+          Step 1
+          <p>
+            For sauce: Combine all sauce ingredients with 1/2 cup water in a
+            medium bowl; set aside for flavors to develop while making crust.
+            Freeze remaining paste .
+          </p>
+        </li>
+        <li>
+          Step 2
+          <p>
+            For crusts: Combine 2 cups of flour with the dry yeast, sugar and
+            salt. Add the water and oil and mix until well blended (about 1
+            minute). Gradually add enough remaining flour slowly, until a soft,
+            sticky dough ball is formed.
+          </p>
+        </li>
+        <li>
+          Step 3
+          <p>
+            Knead for about 4 minutes, on a floured surface, until dough is
+            smooth and elastic. Add more flour, if needed. (If using RapidRise®
+            Yeast, let dough rest, covered, for 10 minutes.)
+          </p>
+        </li>
+        <li>
+          Step 4
+          <p>
+            Divide dough in half. Pat each half (with floured hands) into a
+            12-inch greased pizza pan OR roll dough to fit pans.
+          </p>
+        </li>
+        <li>
+          Step 5
+          <p>
+            For pizzas: Preheat oven to 425 degrees F. Top crusts with sauce,
+            pepperoni and cheese.
+          </p>
+        </li>
+        <li>
+          Step 6
+          <p>
+            Bake for 18 to 20 minutes until crusts are browned and cheese is
+            bubbly. For best results, rotate pizza pans between top and bottom
+            oven racks halfway through baking.
+          </p>
+        </li>
+      </ul>
+      <br />
+      <br />
+      <hr />
+      <h2 id="describe" style="background-color: #eee">Nutrition Facts</h2>
+      <h3 id="sub-titles">Per serving:</h3>
+      <table>
+        <tr>
+          <td class="makeMe-bold">Calories</td>
+          <td>590cal</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">Protien</td>
+          <td>19.5g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">carbohydrates</td>
+          <td>60.4g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">Fat</td>
+          <td>29.1g</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">cholesterol</td>
+          <td>47.5mg</td>
+        </tr>
+        <tr>
+          <td class="makeMe-bold">sodium</td>
+          <td>1408.3mg</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      const burger = document.querySelector(".fa-burger");
+      const menu = document.querySelector(".menu");
+
+      burger.addEventListener("click", function () {
+        if (menu.classList.contains("active-menu")) {
+          menu.classList.remove("active-menu");
+          menu.classList.add("menu");
+        } else {
+          menu.classList.remove("menu");
+          menu.classList.add("active-menu");
+        }
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/fb94170dc7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,36 +1,8 @@
-// const theFoodImg = document.querySelector('.food-img');
-// const recipeLink = document.querySelector('.recipe-link');
-// const linkIcon = document.querySelector('.fa-link');
 const pinTopBar = document.querySelector('.fa-thumbtack');
 const topBar = document.querySelector('#top-bar');
 const pinColor = document.querySelector('.fa-thumbtack');
 
 
-// theFoodImg.addEventListener('click', function() {
-//     if(theFoodImg.classList.contains('active')){
-//             theFoodImg.classList.remove('active');
-//             theFoodImg.classList.remove('food-hover');
-//             theFoodImg.classList.add('food-img');
-//             recipeLink.classList.add('recipe-link');
-//         recipeLink.classList.remove('click');
-//         linkIcon.classList.add('white-link')
-//         linkIcon.classList.remove('blue-link')
-//     } else {
-//         theFoodImg.classList.remove('food-img');
-//         theFoodImg.classList.add('active');
-//         recipeLink.classList.remove('recipe-link');
-//         recipeLink.classList.add('click');
-//         linkIcon.classList.remove('white-link');
-//         linkIcon.classList.add('blue-link');
-
-//     }
-// })
-
-// theFoodImg.addEventListener('mouseenter', function(){
-//     if (theFoodImg.classList.contains('active') !== true) {
-//         theFoodImg.classList.add('food-hover');
-//     }
-// })
 
 
 if(topBar.classList.contains('fix')) {
@@ -52,7 +24,7 @@ const recipeContainer = document.querySelector('div#recipe-card-container');
 const linkIcon = document.querySelectorAll('.fa-link');
 
 
-recipeContainer.addEventListener('click',function(event){
+document.addEventListener('click',function(event){
     if(event.target.classList.contains('food-img') || event.target.classList.contains('food-hover')){
         if(event.target.classList.contains('active')==false) {
             event.target.classList.remove('food-img');
@@ -85,5 +57,6 @@ recipeContainer.addEventListener('click',function(event){
             recipeLink.classList.remove('click');
             }
 
-    } 
-})
+    }
+});
+
